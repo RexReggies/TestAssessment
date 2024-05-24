@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Test Suite" parallel="false" thread-count="1">
+	<listeners>
+		<listener class-name="com.assessment.utils.ExtentReport" />
+	</listeners>
+	<test name="Api">
+		<classes>
+			<class name="com.assessment.tests.TestApi" />
+		</classes>
+	</test>
+	
+</suite>

@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="tests" thread-count="3">
+	<listeners>
+		<listener class-name="com.assessment.utils.ExtentReport" />
+	</listeners>
+	<test name="HomePage">
+		<classes>
+			<class name="com.assessment.tests.SearchTest" />
+		</classes>
+	</test>
+	<test name="WeatherInYourCity">
+		<classes>
+			<class name="com.assessment.tests.TestWeatherInCity" />
+		</classes>
+	</test>
+	<test name="Maps">
+		<classes>
+			<class name="com.assessment.tests.TestMaps" />
+		</classes>
+	</test>
+</suite>

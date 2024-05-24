@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-24T10:12:54 IST" name="Parallel Test Suite" finished-at="2024-05-24T10:14:38 IST" duration-ms="104018">
+    <groups>
+    </groups>
+    <test started-at="2024-05-24T10:12:54 IST" name="HomePage" finished-at="2024-05-24T10:14:35 IST" duration-ms="100848">
+      <class name="com.assessment.tests.SearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assessment.tests.SearchTest@59d016c9]" started-at="2024-05-24T10:12:54 IST" name="setUp" finished-at="2024-05-24T10:13:52 IST" duration-ms="58031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchCity()[pri:0, instance:com.assessment.tests.SearchTest@59d016c9]" started-at="2024-05-24T10:13:52 IST" name="testSearchCity" finished-at="2024-05-24T10:14:13 IST" duration-ms="21141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchCity -->
+        <test-method signature="testSearchInvalidCity()[pri:0, instance:com.assessment.tests.SearchTest@59d016c9]" started-at="2024-05-24T10:14:13 IST" name="testSearchInvalidCity" finished-at="2024-05-24T10:14:17 IST" duration-ms="3606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchInvalidCity -->
+        <test-method signature="testVerifyCityWeatherDetails()[pri:0, instance:com.assessment.tests.SearchTest@59d016c9]" started-at="2024-05-24T10:14:17 IST" name="testVerifyCityWeatherDetails" finished-at="2024-05-24T10:14:34 IST" duration-ms="17756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyCityWeatherDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assessment.tests.SearchTest@59d016c9]" started-at="2024-05-24T10:14:34 IST" name="tearDown" finished-at="2024-05-24T10:14:35 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.assessment.tests.SearchTest -->
+    </test> <!-- HomePage -->
+    <test started-at="2024-05-24T10:12:54 IST" name="Maps" finished-at="2024-05-24T10:14:36 IST" duration-ms="101846">
+      <class name="com.assessment.tests.TestMaps">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assessment.tests.TestMaps@6580cfdd]" started-at="2024-05-24T10:12:54 IST" name="setUp" finished-at="2024-05-24T10:13:50 IST" duration-ms="56295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="navigateToMaps()[pri:1, instance:com.assessment.tests.TestMaps@6580cfdd]" started-at="2024-05-24T10:13:50 IST" name="navigateToMaps" finished-at="2024-05-24T10:14:01 IST" duration-ms="10754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToMaps -->
+        <test-method signature="verifyMapLayers()[pri:2, instance:com.assessment.tests.TestMaps@6580cfdd]" started-at="2024-05-24T10:14:01 IST" name="verifyMapLayers" finished-at="2024-05-24T10:14:35 IST" duration-ms="34468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMapLayers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assessment.tests.TestMaps@6580cfdd]" started-at="2024-05-24T10:14:35 IST" name="tearDown" finished-at="2024-05-24T10:14:36 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.assessment.tests.TestMaps -->
+    </test> <!-- Maps -->
+    <test started-at="2024-05-24T10:12:54 IST" name="WeatherInYourCity" finished-at="2024-05-24T10:14:38 IST" duration-ms="104018">
+      <class name="com.assessment.tests.TestWeatherInCity">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assessment.tests.TestWeatherInCity@67a20f67]" started-at="2024-05-24T10:12:54 IST" name="setUp" finished-at="2024-05-24T10:13:51 IST" duration-ms="56856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchWeatherInYourCity()[pri:1, instance:com.assessment.tests.TestWeatherInCity@67a20f67]" started-at="2024-05-24T10:13:51 IST" name="testSearchWeatherInYourCity" finished-at="2024-05-24T10:14:10 IST" duration-ms="19598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchWeatherInYourCity -->
+        <test-method signature="testVerfiyWeatherInYourCityHeadline()[pri:2, instance:com.assessment.tests.TestWeatherInCity@67a20f67]" started-at="2024-05-24T10:14:10 IST" name="testVerfiyWeatherInYourCityHeadline" finished-at="2024-05-24T10:14:12 IST" duration-ms="1964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerfiyWeatherInYourCityHeadline -->
+        <test-method signature="testVerfiyWeatherInYourCitySearchBoxValue()[pri:3, instance:com.assessment.tests.TestWeatherInCity@67a20f67]" started-at="2024-05-24T10:14:12 IST" name="testVerfiyWeatherInYourCitySearchBoxValue" finished-at="2024-05-24T10:14:12 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerfiyWeatherInYourCitySearchBoxValue -->
+        <test-method signature="testVerfiyCityWeatherDetails()[pri:4, instance:com.assessment.tests.TestWeatherInCity@67a20f67]" started-at="2024-05-24T10:14:12 IST" name="testVerfiyCityWeatherDetails" finished-at="2024-05-24T10:14:13 IST" duration-ms="957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerfiyCityWeatherDetails -->
+        <test-method signature="testVerfiyInvalidCityWeatherDetails()[pri:5, instance:com.assessment.tests.TestWeatherInCity@67a20f67]" started-at="2024-05-24T10:14:13 IST" name="testVerfiyInvalidCityWeatherDetails" finished-at="2024-05-24T10:14:18 IST" duration-ms="4520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerfiyInvalidCityWeatherDetails -->
+        <test-method signature="testVerfiyRedirectionToCityPage()[pri:6, instance:com.assessment.tests.TestWeatherInCity@67a20f67]" started-at="2024-05-24T10:14:18 IST" name="testVerfiyRedirectionToCityPage" finished-at="2024-05-24T10:14:38 IST" duration-ms="19789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerfiyRedirectionToCityPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assessment.tests.TestWeatherInCity@67a20f67]" started-at="2024-05-24T10:14:38 IST" name="tearDown" finished-at="2024-05-24T10:14:38 IST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.assessment.tests.TestWeatherInCity -->
+    </test> <!-- WeatherInYourCity -->
+  </suite> <!-- Parallel Test Suite -->
+</testng-results>
