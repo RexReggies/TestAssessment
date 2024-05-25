@@ -5,11 +5,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-
-import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -22,6 +19,7 @@ public class ExtentReport implements ITestListener {
 
 	private static ExtentReports extent;
 	private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+	public String suiteName = "";
 
 	@Override
 	public void onStart(ITestContext context) {
@@ -31,6 +29,7 @@ public class ExtentReport implements ITestListener {
 		sparkReporter.config().setReportName("Test Report");
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
+		suiteName = context.getSuite().getName();
 	}
 
 	@Override
@@ -51,9 +50,11 @@ public class ExtentReport implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		String screenshotPath = takeScreenshot(DriverManager.getDriver(), result.getMethod().getMethodName());
 		test.get().log(Status.FAIL, "Test failed: " + result.getThrowable());
-		test.get().fail("Screenshot of failure: ").addScreenCaptureFromPath(screenshotPath);
+		if (!suiteName.equalsIgnoreCase("API Test Suite")) {
+			String screenshotPath = takeScreenshot(DriverManager.getDriver(), result.getMethod().getMethodName());
+			test.get().fail("Screenshot of failure: ").addScreenCaptureFromPath(screenshotPath);
+		}
 	}
 
 	@Override

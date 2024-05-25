@@ -47,7 +47,7 @@ public class TestWeatherInCity {
 	}
 
 	@Test(priority = 4)
-	public void testVerfiyCityWeatherDetails() throws IOException {
+	public void testVerfiyWeatherInYourCityDetails() throws IOException {
 		ExtentTest test = ExtentReport.getTest();
 		weath.verifyCityWeatherDetails("WeatherInYourCity", test);
 		test.info("Verified weather in your city line successfully");

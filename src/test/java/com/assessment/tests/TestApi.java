@@ -20,7 +20,7 @@ public class TestApi {
 	@Test
 	public void getFiveDayForecast() throws IOException, ParseException {
 		ExtentTest test = ExtentReport.getTest();
-		apipage.getForeCast("LondonCords", test);
+		apipage.getForeCast("MarzoliCords", test);
 	}
 
 	@Test

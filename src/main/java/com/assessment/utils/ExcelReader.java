@@ -50,7 +50,11 @@ public class ExcelReader {
 	public String getCityNameFromExcel(String function) throws IOException {
 		return fetchTestData("CityData", function).get("CityName").toString();
 	}
-
+	
+	public String getApiKeyFromExcel(String function) throws IOException {
+		return fetchTestData("APIData", function).get("AppId").toString();
+	}
+	
 	public HashMap<String, String> getWeatherDetailsFromExcel() throws IOException {
 		return fetchTestData("CityData", "VerifyWeatherDetails");
 	}
